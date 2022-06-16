@@ -11,8 +11,8 @@ definePageMeta({
 const titlesText = computed<string[]>(() => t('pages.index.title').split(','))
 const sourcePath = computed<string>(() =>
   theme.value === 'dark'
-    ? '../../night_time.mp4'
-    : '../../sea_girt_drone_vid.mp4'
+    ? '../public/night_time.mp4'
+    : '../public/sea_girt_drone_vid.mp4'
 )
 const firstCardText = computed<string>(() => t('pages.index.first_card'))
 const firstCardImage = computed<string>(() => t('pages.index.first_image'))
@@ -34,7 +34,7 @@ const firstCardImage = computed<string>(() => t('pages.index.first_image'))
           <span
             v-for="(item, i) in titlesText"
             :key="i"
-            class="animated-text-bg drop-shadow-xl text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl block font-black"
+            class="text-shadow text-gray-200 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl dark:animate-pulse dark:uppercase dark:text-slate-800 dark:anim block"
           >
             {{ item }}
           </span>
@@ -71,48 +71,34 @@ const firstCardImage = computed<string>(() => t('pages.index.first_image'))
 
 <style lang="scss">
 $padding: 0.05em;
-.animated-text-bg {
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  content: var(--content);
-  width: 100%;
-  color: theme('colors.gray.100');
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  padding-left: $padding;
-  padding-right: $padding;
+.text-shadow {
   text-shadow: 0 2px 4px theme('colors.slate.800');
 }
 
-html.dark {
-  .animated-text-bg {
-    animation: party-time 2s ease-in-out infinite;
-    text-transform: uppercase;
-    @keyframes party-time {
-      0% {
-        color: theme('colors.slate.800');
-      }
-      25% {
-        color: red;
-      }
-      50% {
-        color: white;
-      }
-      75% {
-        color: green;
-      }
-      100% {
-        color: theme('colors.slate.800');
-      }
-    }
-    text-shadow: 0 2px 4px theme('colors.gray.100');
-  }
-}
+// html.dark {
+//   .animated-text-bg {
+//     animation: party-time 2s ease-in-out infinite;
+//     text-transform: uppercase;
+//     @keyframes party-time {
+//       0% {
+//         color: theme('colors.slate.800');
+//       }
+//       25% {
+//         color: red;
+//       }
+//       50% {
+//         color: white;
+//       }
+//       75% {
+//         color: green;
+//       }
+//       100% {
+//         color: theme('colors.slate.800');
+//       }
+//     }
+//     text-shadow: 0 2px 4px theme('colors.gray.100');
+//   }
+// }
 
 video {
   object-fit: cover;

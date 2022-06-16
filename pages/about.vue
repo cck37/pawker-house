@@ -11,11 +11,14 @@ definePageMeta({
     </PageHeader>
     <PageBody>
       <div class="flex flex-col items-center gap-y-4">
-        <div class="text-2xl font-bold w-80 text-center pb-2">
+        <div
+          class="font-bold sm:text-xl md:text-2xl sm:w-full md:w-80 lg:w-[60%] text-center pb-2"
+        >
           {{ $t('pages.about.description') }}
+          <p>Happy Birthday Cat!</p>
         </div>
         <img
-          src="https://avatars.githubusercontent.com/u/20689555?v=4"
+          src="../public/hb2u.jpg"
           class="inline-block rounded-full"
           alt="cck37"
           width="150"

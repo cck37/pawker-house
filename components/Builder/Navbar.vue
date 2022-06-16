@@ -2,6 +2,7 @@
 import { IApp } from '~/utils/app'
 
 const app = useState<IApp>('app')
+const { t } = useLang()
 const navbar = ref(null)
 const showDrawer = useState<boolean>('navbar.showDrawer', () => false)
 const showOptions = useState<boolean>('navbar.showOptions', () => false)
@@ -20,6 +21,8 @@ const toggleOptions = (show?: boolean) => {
     showOptions.value = !showOptions.value
   }
 }
+
+const logoImage = computed<string>(() => t('components.nav.logo'))
 </script>
 
 <template>
@@ -58,10 +61,11 @@ const toggleOptions = (show?: boolean) => {
             >
               <span class="sr-only">home</span>
               <span class="flex items-center">
-                <IconSimpleIcons:nuxtdotjs
-                  class="inline-block mr-2 text-lg text-green-600"
+                <img
+                  :src="`../public/${logoImage}`"
+                  class="w-10 h-10 inline-block mr-2 text-lg text-green-600 h-"
                 />
-                {{ app.name }}
+                Pawker Hawse
               </span>
             </NuxtLink>
           </slot>

@@ -4,6 +4,8 @@ components:
   theme_switcher:
     theme: theme
     change_theme: change theme
+  nav:
+    logo: logo_light.png
 pages:
   index:
     title: Welcome, To, Parker House
@@ -25,7 +27,7 @@ pages:
   about:
     nav: about
     title: about
-    description: A silly little project made for a friend's birthday. Happy Birthday Cat!
+    description: A silly little project made for a friend's birthday.
   dashboard:
     nav: dashboard
     title: dashboard

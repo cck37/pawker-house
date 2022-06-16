@@ -4,6 +4,8 @@ components:
   theme_switcher:
     theme: theme
     change_theme: change theme
+  nav:
+    logo: logo_dark.png
 pages:
   index:
     title: Welcome, To, God's Basement
@@ -25,7 +27,7 @@ pages:
   about:
     nav: about
     title: about
-    description: A stupid f#$% project made for a friend's birthday. Happy Birthday Cat!
+    description: A dumb project I made to prove that I could make a better parker house website. I was wrong.
   dashboard:
     nav: dashboard
     title: dashboard
