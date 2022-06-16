@@ -18,7 +18,7 @@ definePageMeta({
           <p>Happy Birthday Cat!</p>
         </div>
         <img
-          src="../public/hb2u.jpg"
+          src="/hb2u.jpg"
           class="inline-block rounded-full"
           alt="cck37"
           width="150"

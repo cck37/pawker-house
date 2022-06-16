@@ -20,7 +20,7 @@ const props = defineProps({
       <!-- Card image -->
       <div
         class="bg-cover bg-no-repeat bg-bottom rounded border-2 dark:border-gray-700 w-full md:w-1/3 lg:h-96 md:h-auto relative"
-        :style="`background-image: url(../public/${props.image})`"
+        :style="`background-image: url(/${props.image})`"
       ></div>
       <!-- ./Card image -->
 

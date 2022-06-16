@@ -10,9 +10,7 @@ definePageMeta({
 // vars
 const titlesText = computed<string[]>(() => t('pages.index.title').split(','))
 const sourcePath = computed<string>(() =>
-  theme.value === 'dark'
-    ? '../public/night_time.mp4'
-    : '../public/sea_girt_drone_vid.mp4'
+  theme.value === 'dark' ? '/night_time.mp4' : '/sea_girt_drone_vid.mp4'
 )
 const firstCardText = computed<string>(() => t('pages.index.first_card'))
 const firstCardImage = computed<string>(() => t('pages.index.first_image'))

@@ -62,7 +62,7 @@ const logoImage = computed<string>(() => t('components.nav.logo'))
               <span class="sr-only">home</span>
               <span class="flex items-center">
                 <img
-                  :src="`../public/${logoImage}`"
+                  :src="`/${logoImage}`"
                   class="w-10 h-10 inline-block mr-2 text-lg text-green-600 h-"
                 />
                 Pawker Hawse
