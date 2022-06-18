@@ -32,7 +32,7 @@ const firstCardImage = computed<string>(() => t('pages.index.first_image'))
           <span
             v-for="(item, i) in titlesText"
             :key="i"
-            class="text-shadow text-gray-200 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl dark:animate-pulse dark:uppercase dark:text-slate-800 dark:anim block"
+            class="text-shadow text-gray-200 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl dark:uppercase dark:dark-title block"
           >
             {{ item }}
           </span>
@@ -72,31 +72,6 @@ $padding: 0.05em;
 .text-shadow {
   text-shadow: 0 2px 4px theme('colors.slate.800');
 }
-
-// html.dark {
-//   .animated-text-bg {
-//     animation: party-time 2s ease-in-out infinite;
-//     text-transform: uppercase;
-//     @keyframes party-time {
-//       0% {
-//         color: theme('colors.slate.800');
-//       }
-//       25% {
-//         color: red;
-//       }
-//       50% {
-//         color: white;
-//       }
-//       75% {
-//         color: green;
-//       }
-//       100% {
-//         color: theme('colors.slate.800');
-//       }
-//     }
-//     text-shadow: 0 2px 4px theme('colors.gray.100');
-//   }
-// }
 
 video {
   object-fit: cover;
