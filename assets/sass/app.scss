@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Rozha+One&display=swap');
 
 // apply fonts
-$fontFamily: 'Nuosu SIL', serif;
-body,
-* {
-  font-family: $fontFamily !important;
+$fontFamily_light: 'Old Standard TT', serif;
+$fontFamily_dark: 'Rozha One', serif;
+body {
+  font-family: $fontFamily_light !important;
+}
+.dark body {
+  font-family: $fontFamily_dark !important;
 }
 
 // scrollbar

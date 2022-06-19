@@ -37,9 +37,6 @@ export default defineNuxtConfig({
     '~/assets/sass/app.scss',
   ],
 
-  // ssr
-  ssr: false,
-
   // plugins
   plugins: [
     { src: '@/plugins/aos', ssr: false, mode: 'client' },

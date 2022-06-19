@@ -32,7 +32,7 @@ const firstCardImage = computed<string>(() => t('pages.index.first_image'))
           <span
             v-for="(item, i) in titlesText"
             :key="i"
-            class="text-shadow text-gray-200 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl dark:uppercase dark:dark-title block"
+            class="fire-text text-shadow text-gray-200 text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-8xl dark:uppercase dark:dark-title block"
           >
             {{ item }}
           </span>
@@ -42,16 +42,32 @@ const firstCardImage = computed<string>(() => t('pages.index.first_image'))
     <PageBody>
       <div>
         <div data-aos="fade-left">
-          <card :text="firstCardText" :image="firstCardImage" />
+          <card
+            :text="`${t('pages.index.first_card')}`"
+            :image="`${t('pages.index.first_image')}`"
+            :link="`${t('pages.index.first_link') ?? ''}`"
+          />
         </div>
         <div data-aos="fade-right">
-          <card :text="firstCardText" :image="firstCardImage" />
+          <card
+            :text="`${t('pages.index.second_card')}`"
+            :image="`${t('pages.index.second_image')}`"
+            :link="`${t('pages.index.second_link') ?? ''}`"
+          />
         </div>
         <div data-aos="fade-left">
-          <card :text="firstCardText" :image="firstCardImage" />
+          <card
+            :text="`${t('pages.index.third_card')}`"
+            :image="`${t('pages.index.third_image')}`"
+            :link="`${t('pages.index.third_link') ?? ''}`"
+          />
         </div>
         <div data-aos="fade-right">
-          <card :text="firstCardText" :image="firstCardImage" />
+          <card
+            :text="`${t('pages.index.fourth_card')}`"
+            :image="`${t('pages.index.fourth_image')}`"
+            :link="`${t('pages.index.fourth_link') ?? ''}`"
+          />
         </div>
         <div data-aos="fade-left">
           <card :text="firstCardText" :image="firstCardImage" />
@@ -69,6 +85,41 @@ const firstCardImage = computed<string>(() => t('pages.index.first_image'))
 
 <style lang="scss">
 $padding: 0.05em;
+
+html.dark {
+  .fire-text {
+    color: rgb(255, 115, 0);
+    text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange,
+      4px -5px 6px yellow, -4px -10px 10px yellow, 0 -10px 30px yellow;
+    animation: 2s Blazing infinite alternate linear;
+  }
+  @keyframes Blazing {
+    0% {
+      text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+        0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+    }
+    25% {
+      text-shadow: 0 3px 20px red, 0 0 30px red, 0 0 20px orange, 0 0 5px yellow,
+        -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow;
+    }
+    50% {
+      text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+        -2px -5px 5px yellow, 3px -10px 10px yellow, -4px -15px 20px yellow,
+        2px -20px 30px rgba(255, 255, 0, 0.5);
+    }
+    75% {
+      text-shadow: 0 3px 20px red, 0 0 20px red, 0 -5px 10px orange,
+        3px -5px 5px yellow, -4px -10px 10px yellow,
+        2px -20px 30px rgba(255, 255, 0, 0.5),
+        0px -25px 40px rgba(255, 255, 0, 0);
+    }
+    100% {
+      text-shadow: 0 3px 20px red, 0 0 20px red, 0 0 10px orange, 0 0 0 yellow,
+        0 0 5px yellow, -2px -5px 5px yellow, 4px -10px 10px yellow;
+    }
+  }
+}
+
 .text-shadow {
   text-shadow: 0 2px 4px theme('colors.slate.800');
 }

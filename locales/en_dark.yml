@@ -10,7 +10,17 @@ pages:
   index:
     title: Welcome, To, God's Basement
     first_card: The less you eat, the less cash you have to bring to bring to buy miller lights and over poured vodka mixers. Anything you have eaten will end up on the floor anyway so don't worry about it.
-    first_image: nightlife3-980x1120.png
+    first_image: nightlife_1.png
+    first_link: https://www.spirit76wines.com/login.html
+    second_card: Yeah dude. FOOKING TIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIITS
+    second_image: nightlife_2.png
+    second_link: https://www.pornhub.com/
+    third_card: Expect keybumps in line for the bathroom and expect to be disappointed when no one offers. Fucking cheap rat bastards.
+    third_image: nightlife_3.png
+    third_link: https://media.makeameme.org/created/criticizes-potus-for.jpg
+    fourth_card: Cash only. I'm not paying for your cover or your drinks or your uber or your sloppy pizza. Stop being a fucking freeloader
+    fourth_image: nightlife_4.png
+    fourth_link: https://www.dominos.com/en/
   blank:
     nav: blank
     title: blank page
