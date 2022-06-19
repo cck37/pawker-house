@@ -70,13 +70,25 @@ const firstCardImage = computed<string>(() => t('pages.index.first_image'))
           />
         </div>
         <div data-aos="fade-left">
-          <card :text="firstCardText" :image="firstCardImage" />
+          <card
+            :text="`${t('pages.index.fifth_card')}`"
+            :image="`${t('pages.index.fifth_image')}`"
+            :link="`${t('pages.index.fifth_link') ?? ''}`"
+          />
         </div>
         <div data-aos="fade-right">
-          <card :text="firstCardText" :image="firstCardImage" />
+          <card
+            :text="`${t('pages.index.sixth_card')}`"
+            :image="`${t('pages.index.sixth_image')}`"
+            :link="`${t('pages.index.sixth_link') ?? ''}`"
+          />
         </div>
         <div data-aos="fade-bottom">
-          <card :text="firstCardText" :image="firstCardImage" />
+          <card
+            :text="`${t('pages.index.seventh_card')}`"
+            :image="`${t('pages.index.seventh_image')}`"
+            :link="`${t('pages.index.seventh_link') ?? ''}`"
+          />
         </div>
       </div>
     </PageBody>

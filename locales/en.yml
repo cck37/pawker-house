@@ -11,12 +11,25 @@ pages:
     title: Welcome, To, Parker House
     first_card: The Parker House has several different food and spirit venues offering up everything from fine dining to signature mini burgers, fresh-steamed lobsters, and tavern specialties. Have a look at our menus; we have something for everyone!
     first_image: daylife_1.png
+    first_link: https://www.spirit76wines.com/login.html
     second_card: The Parker House has several different food and spirit venues offering up everything from fine dining to signature mini burgers, fresh-steamed lobsters, and tavern specialties. Have a look at our menus; we have something for everyone!
     second_image: daylife_2.png
+    second_link: https://www.spirit76wines.com/login.html
     third_card: The Parker House has several different food and spirit venues offering up everything from fine dining to signature mini burgers, fresh-steamed lobsters, and tavern specialties. Have a look at our menus; we have something for everyone!
     third_image: daylife_3.png
+    third_link: https://www.spirit76wines.com/login.html
     fourth_card: The Parker House has several different food and spirit venues offering up everything from fine dining to signature mini burgers, fresh-steamed lobsters, and tavern specialties. Have a look at our menus; we have something for everyone!
     fourth_image: daylife_4.png
+    fourth_link: https://www.spirit76wines.com/login.html
+    fifth_card: Lorem Ipsum
+    fifth_image: nightlife_5.png
+    fifth_link: https://play.myclubpenguin.com/
+    sixth_card: Lorem Ipsum
+    sixth_image: nightlife_6.png
+    sixth_link: https://play.myclubpenguin.com/
+    seventh_card: Lorem Ipsum
+    seventh_image: nightlife_7.png
+    seventh_link: https://play.myclubpenguin.com/
   blank:
     nav: blank
     title: blank page

@@ -21,6 +21,15 @@ pages:
     fourth_card: Cash only. I'm not paying for your cover or your drinks or your uber or your sloppy pizza. Stop being a fucking freeloader
     fourth_image: nightlife_4.png
     fourth_link: https://www.dominos.com/en/
+    fifth_card: Lorem Ipsum
+    fifth_image: nightlife_5.png
+    fifth_link: https://play.myclubpenguin.com/
+    sixth_card: Lorem Ipsum
+    sixth_image: nightlife_6.png
+    sixth_link: https://play.myclubpenguin.com/
+    seventh_card: Lorem Ipsum
+    seventh_image: nightlife_7.png
+    seventh_link: https://play.myclubpenguin.com/
   blank:
     nav: blank
     title: blank page
